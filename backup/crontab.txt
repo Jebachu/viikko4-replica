@@ -1,0 +1,2 @@
+# Hourly backup of server A's /var/www/html to server B
+0 * * * * /home/ubuntu/backup-project/backup.sh
