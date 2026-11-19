@@ -1,0 +1,6 @@
+[mysqld]
+server_id = 2
+relay_log = relay-bin
+read_only = ON
+super_read_only = ON
+replicate_do_db = viikko2

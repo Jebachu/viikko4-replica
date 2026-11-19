@@ -1,0 +1,10 @@
+-- Run on server B. Replace the placeholder password; never commit the real one.
+CHANGE REPLICATION SOURCE TO
+  SOURCE_HOST='192.168.1.245',
+  SOURCE_USER='replicator',
+  SOURCE_PASSWORD='<REPLICATION_PASSWORD>',
+  SOURCE_LOG_FILE='mysql-bin.000003',
+  SOURCE_LOG_POS=726,
+  SOURCE_SSL=1,
+  GET_SOURCE_PUBLIC_KEY=1;
+START REPLICA;
